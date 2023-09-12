@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>(Blank) - Shop</title>
+</head>
+<body>
+    <div class="nav-header">
+        <div class="logo-text">
+            <a href="index.html">(Blank)</a>
+        </div>
+        <input type="checkbox" id="nav-check" hidden>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a class="active" href="#">Products</a></li> -->
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-bottom">
+        <ul><li><a href="#">Desktop Computers</a></li></ul>
+        <ul><li><a href="#">Gaming Computers</a></li></ul>
+        <ul><li><a href="#">Games</a></li></ul>
+        <ul><li><a href="#">Accessories</a></li></ul>
+        <ul><li><a href="#">Services</a></li></ul>
+    </div>
+    <div class="page-content">
+        <div class="filter-shop">
+            <div class="filter-header">Category</div>
+            <div class="filter-options">
+                <ul class="filter-categories">
+                    <li class="selected filter-space"><a href="#">All Categories</a></li>
+                    <li><a href="#">Computers</a>
+                        <ul><a href="#">Desktop Computers</a></ul>
+                        <ul><a href="#">Gaming Computers</a></ul>
+                        <ul><a href="#">Components</a></ul>
+                        <ul><a href="#">Accessories</a></ul>
+                    </li>
+                    <li><a href="#">Gaming</a>
+                        <ul><a href="#">Games</a></ul>
+                        <ul><a href="#">Merch</a></ul>
+                        <ul><a href="#">Consoles</a></ul>
+                        <ul><a href="#">Controllers</a></ul>
+                        <ul><a href="#">Gaming Chairs</a></ul>
+                        <ul><a href="#">Gaming Accessories</a></ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter-header">Filters</div>
+            <div class="filter-options">
+                <ul class="filter-categories">
+                    <li class="filter-space selected"><a href="#">Price</a></li>
+                </ul>
+                <div class="price-slider">
+                    <input type="range" min="1" max="30000" value="30000" class="slider" id="myRange">
+                    <p>Range: R0.00 - R<span id="demo"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="item-top">
+            <div class="item-results">19 results</div>
+            <div class="item-dropdown">
+                Sort By
+                <select name="sort" id="sort">
+                    <option value="relevance">Relevance</option>
+                    <option value="high to low">Price: High to Low</option>
+                    <option value="low to high">Price: Low to High</option>
+                    <option value="newest arrivals">Newest Arrivals</option>
+              </select></div>
+        </div>
+        <div class="item">
+            <div class="item-wrapper">
+                <div class="item-container">
+                    <img class="item-image" src="BeatSaberCover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Beat Saber</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R175.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="CallOfDutyBlackOpsColdWarCover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Call Of Duty Black Ops: Cold War</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R395.67</span>
+                                <span class="actual-price">R1,199.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="CelesteCover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Celeste</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R54.75</span>
+                                <span class="actual-price">R219.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="Cyberpunk2077Cover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Cyberpunk 2077</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R399.50</span>
+                                <span class="actual-price">R799.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-wrapper other-rows">
+                <div class="item-container">
+                    <img class="item-image" src="DeadByDaylightCover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Dead By Daylight</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R87.60</span>
+                                <span class="actual-price">R219.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="HogwartsLegacyCover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Hogwarts Legacy</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R679.20</span>
+                                <span class="actual-price">R849.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="PhasmophobiaCover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Phasmophobia</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R79.20</span>
+                                <span class="actual-price">R99.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="ResidentEvil4Cover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Resident Evil 4</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R1,069.01</span>
+                                <!-- <span class="actual-price">R1,069.01</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-wrapper other-rows">
+                <div class="item-container">
+                    <img class="item-image" src="RiskOfRain2Cover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Risk Of Rain 2</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R134.50</span>
+                                <span class="actual-price">R269.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="RustCover.png" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Rust</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R220.43</span>
+                                <span class="actual-price">R329.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="StreetFighter6Cover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Street Fighter 6</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R1,069.01</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="SystemShockCover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">System Shock</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R520.00</span>
+                                <span class="actual-price">R650.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-wrapper other-rows">
+                <div class="item-container">
+                    <img class="item-image" src="TheLastOfUsPart1Cover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">The Last Of Us: Part I</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R899.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="WatchDogs2Cover.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Watch Dogs 2</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R149.85</span>
+                                <span class="actual-price">R999.00</span>
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="computer-image" src="ASUS Gaming PC Intel Core i5 12th Gen  16GB  1TB SSD  Nvidia RTX 3060OC 12GB.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Intel Core i5 12th Gen  16GB  1TB SSD  Nvidia RTX 3060OC 12GB</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R29,999.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="PCBuilder Player 1 V2 AMD Ryzen 7 Nvidia RTX3060 12GB Gaming PC.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">PCBuilder Player 1 V2 AMD Ryzen 7 Nvidia RTX3060 12GB</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R25,999.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-wrapper other-rows">
+                <div class="item-container">
+                    <img class="item-image" src="PCBuilder Player 2 AMD Ryzen 5 Nvidia GTX1650 4GB.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">PCBuilder Player 2 AMD Ryzen 5 Nvidia GTX1650 4GB</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R15,499.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="PCBuilder Player 2 V2 AMD Ryzen 5 Nvidia RTX3050 8GB Gaming PC.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">PCBuilder Player 2 V2 AMD Ryzen 5 Nvidia RTX3050 8GB</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R16,999.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="PCBuilder Player 3 V3 AMD Ryzen 5.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">PCBuilder Player 3 V3 AMD Ryzen 5</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R9,999.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="Megatek Full PC Intel Pentium Gold 16GB 2TB NVMe SSD Windows 11 Home PC.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Megatek Full PC Intel Pentium Gold 16GB 2TB NVMe SSD Windows 11 Home</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R11,299.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-wrapper other-rows">
+                <div class="item-container">
+                    <img class="item-image" src="Megatek Core Full PC i3 13th Gen 16GB RAM 1TB NVMe SSD Windows 11 Home PC.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Megatek Core Full PC i3 13th Gen 16GB RAM 1TB NVMe SSD Windows 11 Home</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R11,199.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="Megatek Box Only Intel Pentium Gold 16GB 1TB NVMe SSD Windows 11 Home PC.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Megatek Intel Pentium Gold 16GB 500GB NVMe SSD Windows 11 Home PC</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R9,599.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container">
+                    <img class="item-image" src="Megatek Box Only Intel Pentium Gold 16GB 1TB NVMe SSD Windows 11 Home PC.jpg" alt="">
+                    <div class="item-info">
+                        <a class="item-name" href="#">Megatek Intel Pentium Gold 16GB 1TB NVMe SSD Windows 11 Home</a>
+                        <div class="item-bottom">
+                            <div class="item-price">
+                                <span class="price">R10,999.00</span>
+                                <!-- <span class="actual-price">R150.00</span> -->
+                            </div>
+                            <div class="item-cart">
+                                <button class="cart-btn">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-option">
+                <div class="footer-header">Products</div>
+                <div class="footer-links"><a href="#">Desktop Computers</a></div>
+                <div class="footer-links"><a href="#">Gaming Computers</a></div>
+                <div class="footer-links"><a href="#">Accessories</a></div>
+                <div class="footer-links"><a href="#">Games</a></div>
+            </div>
+            <div class="footer-option">
+                <div class="footer-header">Help</div>
+                <div class="footer-links"><a href="#">Track Order</a></div>
+                <div class="footer-links"><a href="#">Returns</a></div>
+                <div class="footer-links"><a href="#">Shipping</a></div>
+                <div class="footer-links"><a href="#">FAQs</a></div>
+            </div>
+            <div class="footer-option">
+                <div class="footer-header">Company</div>
+                <div class="footer-links"><a href="#">Terms & Conditions</a></div>
+                <div class="footer-links"><a href="#">Privacy Policy</a></div>
+                <div class="footer-links"><a href="#">Competitions</a></div>
+            </div>
+            <div class="footer-option">
+                <div class="footer-header">Contact</div>
+                <div class="footer-email"><a href="#">sales@blank.co.za</a></div>
+                <div class="footer-phone"><a href="#">063 554 6036</a></div>
+                <img class="footer-payments" src="/Images/Payment-Methods.webp" alt="">
+            </div>
+            <div class="footer-contact">
+                <div class="footer-header">Newsletter</div>
+                <input type="email" autocomplete="off" placeholder="example@gmail.com" id="email">
+                <input class="submit" type="submit" value="Submit" id="submitBtn">
+            </div>
+        </div>
+        <div class="footer-bottom">Copyright  2023 (Blank). All rights reserved.</div>
+        </footer>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+        
+        slider.oninput = function() {
+          output.innerHTML = this.value;
+        }
+        
+        let Submit = document.querySelector("#submitBtn");
+        let Email = document.querySelector("#email");
+
+        Submit.addEventListener("click" , (e) =>{
+            e.preventDefault();
+
+            alert("You have succesfully signed up for the newsletter.");
+        })
+    </script>
+</body>
+</html>

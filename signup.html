@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>(Blank) - Signup</title>
+</head>
+<body>
+    <div class="nav-header">
+        <div class="logo-text">
+            <a href="index.html">(Blank)</a>
+        </div>
+        <input type="checkbox" id="nav-check" hidden>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a class="active" href="#">Products</a></li> -->
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="nav-bottom">
+        <ul><li><a href="#">Desktop Computers</a></li></ul>
+        <ul><li><a href="#">Gaming Computers</a></li></ul>
+        <ul><li><a href="#">Games</a></li></ul>
+        <ul><li><a href="#">Accessories</a></li></ul>
+        <ul><li><a href="#">Services</a></li></ul>
+    </div>
+    <div class="page-content login-page">
+        <div class="login-header">Signup</div>
+        <div class="login-container">
+            <div class="login-input">
+                <div class="input-area">Enter a username</div>
+                <input class="input-box" id="username" name="username" autocomplete="off" type="text">
+            </div>
+            <div class="login-input password-space">
+                <div class="input-area">Enter a password</div>
+                <input class="input-box" id="password" name="password" autocomplete="off" type="password">
+            </div>
+            <div class="login-input password-space">
+                <div class="input-area">Re-enter password</div>
+                <input class="input-box" id="re-password" name="password" autocomplete="off" type="password">
+            </div>
+            <div class="login-input">
+                <input class="input-button" id="signupBtn" value="Signup" autocomplete="off" type="button">
+                <div class="signup-link">Already have an account?<a class="signup" href="login.html">Login</a></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-option">
+                <div class="footer-header">Products</div>
+                <div class="footer-links"><a href="#">Desktop Computers</a></div>
+                <div class="footer-links"><a href="#">Gaming Computers</a></div>
+                <div class="footer-links"><a href="#">Accessories</a></div>
+                <div class="footer-links"><a href="#">Games</a></div>
+            </div>
+            <div class="footer-option">
+                <div class="footer-header">Help</div>
+                <div class="footer-links"><a href="#">Track Order</a></div>
+                <div class="footer-links"><a href="#">Returns</a></div>
+                <div class="footer-links"><a href="#">Shipping</a></div>
+                <div class="footer-links"><a href="#">FAQs</a></div>
+            </div>
+            <div class="footer-option">
+                <div class="footer-header">Company</div>
+                <div class="footer-links"><a href="#">Terms & Conditions</a></div>
+                <div class="footer-links"><a href="#">Privacy Policy</a></div>
+                <div class="footer-links"><a href="#">Competitions</a></div>
+            </div>
+            <div class="footer-option">
+                <div class="footer-header">Contact</div>
+                <div class="footer-email"><a href="#">sales@blank.co.za</a></div>
+                <div class="footer-phone"><a href="#">063 554 6036</a></div>
+                <img class="footer-payments" src="/Images/Payment-Methods.webp" alt="">
+            </div>
+            <div class="footer-contact">
+                <div class="footer-header">Newsletter</div>
+                <input type="email" autocomplete="off" placeholder="example@gmail.com" id="email">
+                <input class="submit" type="submit" value="Submit" id="submitBtn">
+            </div>
+        </div>
+        <div class="footer-bottom">Copyright  2023 (Blank). All rights reserved.</div>
+    </footer>
+    <script>
+        let Signup = document.querySelector("#signupBtn");
+        let User = document.querySelector("#user");
+        let Password = document.querySelector("#password");
+        let Repassword = document.querySelector("#re-password");
+
+        Signup.addEventListener("click" , (e) =>{
+            e.preventDefault();
+
+            if(Password.value == Repassword.value){
+                window.location.href = 'login.html';
+            }
+            else{
+                alert("Re-entered Password does not match, Try Again!");
+            }
+        })
+
+        let Submit = document.querySelector("#submitBtn");
+        let Email = document.querySelector("#email");
+
+        Submit.addEventListener("click" , (e) =>{
+            e.preventDefault();
+
+            alert("You have succesfully signed up for the newsletter.");
+        })
+    </script>
+</body>
+</html>
